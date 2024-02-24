@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="60dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:paddingTop="20dp"
+        android:paddingRight="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/albumCover"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        tools:src="@drawable/sample_album_cover"
+        android:src="@drawable/your_album_cover" />
+
+    <TextView
+        android:id="@+id/songTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/albumCover"
+        android:layout_marginTop="10dp"
+        tools:text="Song Title"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="#C2FA73"
+        android:textStyle="bold"
+         />
+    <TextView
+        android:id="@+id/bandName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/songTitle"
+        android:layout_marginTop="10dp"
+        tools:text="Band Name"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="#00E2FF"
+        android:textStyle="bold"
+        />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/bandName"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBar"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/playButton"
+            android:layout_width="0dp"
+            android:layout_height="355dp"
+            android:layout_weight="1"
+            android:src="@drawable/play" />
+
+        <ImageButton
+            android:id="@+id/pauseButton"
+            android:layout_width="0dp"
+            android:layout_height="355dp"
+            android:layout_weight="1"
+            android:src="@drawable/pause" />
+
+        <ImageButton
+            android:id="@+id/stopButton"
+            android:layout_width="0dp"
+            android:layout_height="355dp"
+            android:layout_weight="1"
+            android:src="@drawable/stop" />
+    </LinearLayout>
+
+</RelativeLayout>
